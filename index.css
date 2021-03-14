@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html, body,#app{
+    width: 100%;
+    height: 100%;
+}
+#app{
+    position: relative;
+    background-color: #000000;
+}
+.warp{
+    position: relative;
+    margin: 0 auto;
+    width: 600px;
+    height: 600px;
+    background: rgb(181, 184, 29);
+    border: 4px solid #b12db1;
+    top: 20px;
+    background-size: cover;
+}
+.go, .lest{
+    width: 120px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: '华文楷体';
+    position: absolute;
+    left: calc(50% - 60px);
+    top: calc(50% - 30px);
+    z-index: 9;
+    cursor: pointer;
+    outline: none;
+    background-image: linear-gradient(90deg, rgb(16, 169, 216), rgb(80, 245, 102), rgb(238, 234, 104), rgb(205, 71, 231),rgb(16, 169, 216));
+    border: none;
+    animation: backgroundMove 3s  alternate infinite;
+    background-size: 500px;
+}
+.lest{
+    display: none;
+    left: calc(50% + 10px);
+}
+@keyframes backgroundMove{
+    100%{
+        background-position: -500px 0px;
+    }
+}
+
+.food{
+    background-color: green;
+}
+
+.fen{
+    position: absolute;
+    left: calc(63% + 130px);
+    top: 25px;
+    z-index: 9;
+    width: 100px;
+    height: 60px;
+    background-image: linear-gradient(60deg, #9795f0 0%, #fbc8d4 100%);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: '华文楷体';
+    line-height: 60px;
+    padding:0 10px;
+    border-radius: 5px;
+}
+.warp div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+}
+.chreamHead{
+    background-color: red;
+}
+.chreamBody{
+    background-color: rgb(62, 150, 243);
+}
+.fen{
+    display: inline-block;
+}
+em{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.over{
+    display: none;
+    font-size: 18px;
+    color: #ffffff;
+    position: absolute;
+    left: calc(50% - 300px);
+    width: 600px;
+    height: 600px;
+    background-color: rgba(0,0, 0, .5);
+    top: 24px;
+    background-size: cover;
+    z-index: 8;
+    text-align: center;
+    line-height: 50px;
+    font-family: '华文楷体';
+}
